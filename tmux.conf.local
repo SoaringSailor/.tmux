@@ -390,7 +390,7 @@ tmux_conf_copy_to_os_clipboard=false
 # bind c new-window -c '#{pane_current_path}' #!important
 
 # move status line to top
-#set -g status-position top
+set -g status-position top
 
 
 # -- tpm -----------------------------------------------------------------------
@@ -434,6 +434,20 @@ tmux_conf_uninstall_plugins_on_reload=true
 #set -g @plugin 'tmux-plugins/tmux-continuum'
 #set -g @continuum-restore 'on'
 
+# Dracula plugin
+set -g @plugin 'dracula/tmux'
+set -g @dracula-plugins 'git spotify-tui ram-usage cpu-usage battery weather time'
+set -g @dracula-show-empty-plugins false
+set -g @dracula-show-timezone false
+set -g @dracula-day-month true
+set -g @dracula-military-time true
+set -g @dracula-time-format "%R"
+set -g @dracula-show-fahrenheit false
+set -g @dracula-show-location false
+set -g @dracula-ram-usage-label "🐏"
+set -g @dracula-cpu-usage-label "💻"
+set -g @dracula-gpu-usage-label "🎮"
+set -g @dracula-battery-label "🔋"
 
 # -- custom variables ----------------------------------------------------------
 
